@@ -2,7 +2,7 @@ docdb:
     source:  "https://github.com/b51-clouddevops/tf-module-docdb.git"
     version: "main"  
 
-redis:
+<!-- redis:
     source:  "https://github.com/b51-clouddevops/tf-module-redis.git"
     version: "main"  
 
@@ -10,6 +10,6 @@ mysql:
     source:  "https://github.com/b51-clouddevops/tf-module-mysql.git"
     version: "main"  
 
-rab:
-    source:  "https://github.com/b51-clouddevops/tf-module-docdb.git"
-    version: "main"  
+rabbitmq:
+    source:  "https://github.com/b51-clouddevops/tf-module-rabbitmq.git"
+    version: "main"   -->
