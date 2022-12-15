@@ -3,5 +3,5 @@ docdb:
     version: "main"  
 
 redis:
-    source:  "https://github.com/b51-clouddevops/tf-module-docdb.git"
+    source:  "https://github.com/b51-clouddevops/tf-module-redis.git"
     version: "main" 
