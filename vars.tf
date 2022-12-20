@@ -7,3 +7,4 @@
 # variable "DEFAULT_VPC_RT" {}
 
 variable "ENV" {}
+RDS_MYSQL_PORT      = 3306
