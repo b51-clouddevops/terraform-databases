@@ -17,9 +17,17 @@ module "mysql" {
 }
 
 module "redis" {
-  source              = "./vendor/modules/redis"  
-  ENV                 = var.ENV 
+  source                    = "./vendor/modules/redis"  
+  ENV                       = var.ENV 
+  REDIS_PORT                = var.REDIS_PORT
+  REDIS_PORT_INSTANCE_CLASS = var.REDIS_PORT_INSTANCE_CLASS
+  REDIS_ENGINE_VERSION      = var.REDIS_ENGINE_VERSION
 }
+
+REDIS_PORT                 = 6379 
+REDIS_PORT_INSTANCE_CLASS  = "cache.t3.medium"
+REDIS_ENGINE_VERSION       = "6.x"
+REDIS_NODE_COUNT           = 2
 
 output "redis" {
     value = module.redis.redis
