@@ -4,8 +4,12 @@ module "docdb" {
 }
 
 module "mysql" {
-  source              = "./vendor/modules/mysql"  
-  ENV                 = var.ENV 
+  source                   = "./vendor/modules/mysql"  
+  ENV                      = var.ENV 
+  RDS_MYSQL_PORT           = var.RDS_MYSQL_PORT
+  RDS_MYSQL_STORAGE        = var.RDS_MYSQL_STORAGE
+  RDS_MYSQL_ENGINE_VERSION = var.RDS_MYSQL_ENGINE_VERSION
+  RDS_MYSQL_INSTANCE_CLASS = var.RDS_MYSQL_INSTANCE_CLASS
 }
 
 module "redis" {
