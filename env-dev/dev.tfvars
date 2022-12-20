@@ -11,4 +11,4 @@ DOCDB_PORT_INSTANCE_CLASS  = "db.t3.medium"
 
 REDIS_PORT                 = 6379 
 DOCDB_PORT_INSTANCE_CLASS  = "cache.t3.micro"
-
+DOCDB_ENGINE_VERSION       = "6.x"
