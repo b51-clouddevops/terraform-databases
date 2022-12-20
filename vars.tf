@@ -19,3 +19,13 @@ variable "DOCDB_PORT" {}
 variable "DOCDB_INSTANCE_COUNT" {} 
 variable "DOCDB_PORT_INSTANCE_CLASS" {} 
 
+# REDIS VARIABLES
+variable "REDIS_PORT" {}
+variable "" {
+  
+}
+
+REDIS_PORT                 = 6379 
+REDIS_PORT_INSTANCE_CLASS  = "cache.t3.medium"
+REDIS_ENGINE_VERSION       = "6.x"
+REDIS_NODE_COUNT           = 2
