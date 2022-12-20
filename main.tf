@@ -14,7 +14,7 @@ module "redis" {
 }
 
 output "redis" {
-    value = mdoule.redis.redis
+    value = module.redis.redis
 }
 
 # We cannot parameterise anything on source of the module. So that means we cannot use the variables.
