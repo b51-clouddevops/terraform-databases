@@ -10,5 +10,5 @@ DOCDB_INSTANCE_COUNT       = 1
 DOCDB_PORT_INSTANCE_CLASS  = "db.t3.medium"
 
 REDIS_PORT                 = 6379 
-DOCDB_PORT_INSTANCE_CLASS  = 
+DOCDB_PORT_INSTANCE_CLASS  = "cache.t3.micro"
 
