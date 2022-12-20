@@ -10,6 +10,6 @@ DOCDB_INSTANCE_COUNT       = 2
 DOCDB_PORT_INSTANCE_CLASS  = "db.t3.large"
 
 REDIS_PORT                 = 6379 
-REDIS_PORT_INSTANCE_CLASS  = "cache.t3.medium"
+REDIS_INSTANCE_CLASS  = "cache.t3.medium"
 REDIS_ENGINE_VERSION       = "6.x"
 REDIS_NODE_COUNT           = 2
