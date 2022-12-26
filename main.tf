@@ -29,6 +29,10 @@ output "redis" {
     value = module.redis.redis
 }
 
+output "DOCDB_ENDPOINT" {
+    value = module.docdb.DOCDB_ENDPOINT
+}
+
 
 # We cannot parameterise anything on source of the module. So that means we cannot use the variables.
 # How can I tell to my source module to fetch the code from a branch of my choice ? By default, it only refers to main branch
