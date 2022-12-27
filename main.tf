@@ -25,6 +25,13 @@ module "redis" {
   REDIS_NODE_COUNT          = var.REDIS_NODE_COUNT
 }
 
+module "rabbitmq" {
+  source                     = "./vendor/modules/rabbitmq"  
+  ENV                        = var.ENV 
+  RABBITMQ_PORT              = var.RABBITMQ_PORT
+
+}
+
 output "redis" {
     value = module.redis.redis
 }

@@ -13,3 +13,5 @@ REDIS_PORT                 = 6379
 REDIS_INSTANCE_CLASS  = "cache.t3.medium"
 REDIS_ENGINE_VERSION       = "6.x"
 REDIS_NODE_COUNT           = 2
+
+RABBITMQ_PORT              = 5672
