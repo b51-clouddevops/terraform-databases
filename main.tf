@@ -16,18 +16,18 @@ module "mysql" {
   RDS_MYSQL_INSTANCE_CLASS = var.RDS_MYSQL_INSTANCE_CLASS
 }
 
-module "redis" {
-  source                    = "./vendor/modules/redis"  
-  ENV                       = var.ENV 
-  REDIS_PORT                = var.REDIS_PORT
-  REDIS_INSTANCE_CLASS      = var.REDIS_INSTANCE_CLASS
-  REDIS_ENGINE_VERSION      = var.REDIS_ENGINE_VERSION
-  REDIS_NODE_COUNT          = var.REDIS_NODE_COUNT
-}
+# module "redis" {
+#   source                    = "./vendor/modules/redis"  
+#   ENV                       = var.ENV 
+#   REDIS_PORT                = var.REDIS_PORT
+#   REDIS_INSTANCE_CLASS      = var.REDIS_INSTANCE_CLASS
+#   REDIS_ENGINE_VERSION      = var.REDIS_ENGINE_VERSION
+#   REDIS_NODE_COUNT          = var.REDIS_NODE_COUNT
+# }
 
-output "redis" {
-    value = module.redis.redis
-}
+# output "redis" {
+#     value = module.redis.redis
+# }
 
 output "DOCDB_ENDPOINT" {
     value = module.docdb.DOCDB_ENDPOINT
