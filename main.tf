@@ -29,7 +29,6 @@ module "rabbitmq" {
   source                     = "./vendor/modules/rabbitmq"  
   ENV                        = var.ENV 
   RABBITMQ_PORT              = var.RABBITMQ_PORT
-
 }
 
 output "redis" {
